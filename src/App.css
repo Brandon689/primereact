@@ -1,0 +1,4 @@
+.layout-dark {
+    background: linear-gradient(180deg, #2e323f, #0a061a);
+    background-image: url(/assets/effect-ondark.png);
+  }
