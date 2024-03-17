@@ -275,7 +275,7 @@ export default function DataViewComponent() {
     };
 
     return (
-        <div className="card">
+        <div className="frame">
             <DataView value={products} listTemplate={listTemplate} />
         </div>
     )

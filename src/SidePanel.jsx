@@ -50,7 +50,14 @@ export default function SidePanel({ onContentChange }) {
                                 <li onClick={() => handleClick('content2')}>
                                     <a className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full">
                                         <i className="pi pi-bookmark mr-2"></i>
-                                        <span className="font-medium">Bookmarks</span>
+                                        <span className="font-medium">Products</span>
+                                        <Ripple />
+                                    </a>
+                                </li>
+                                <li onClick={() => handleClick('content3')}>
+                                    <a className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full">
+                                        <i className="pi pi-bookmark mr-2"></i>
+                                        <span className="font-medium">Files</span>
                                         <Ripple />
                                     </a>
                                 </li>

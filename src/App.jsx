@@ -8,6 +8,8 @@ import Tuesday from './Tuesday';
 import Wednesday from './Wednesday';
 import Thursday from './Thursday';
 import DataViewComponent from './DataViewComponent';
+import TreeViewComponent from './TreeView';
+import AdvancedDataViewComponent from './AdvancedDataViewComponent'
 
 export default function BasicDemo() {
     const [selectedContent, setSelectedContent] = useState('content1'); // Initial content
@@ -24,11 +26,11 @@ export default function BasicDemo() {
             </aside>
             <div className="layout-content">
                 <div className="layout-content-inner">
-                <DataViewComponent/>
+                
 
-                    {selectedContent === 'content1' && <Monday />}
-                    {selectedContent === 'content2' && <Tuesday />}
-                    {selectedContent === 'content3' && <Wednesday />}
+                    {selectedContent === 'content1' && <TreeViewComponent />}
+                    {selectedContent === 'content2' && <DataViewComponent/>}
+                    {selectedContent === 'content3' && <AdvancedDataViewComponent />}
                     {selectedContent === 'content4' && <Thursday />}
                 </div>
             </div>
